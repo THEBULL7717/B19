@@ -1,0 +1,9 @@
+import numpy as np
+
+# A "List" on steroids
+scores = np.array([85, 90, 78, 92, 88])
+
+# Calculate the average instantly
+average = np.mean(scores)
+
+print(f"The average class score is: {average}")
