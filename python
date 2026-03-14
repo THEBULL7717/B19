@@ -1,0 +1,14 @@
+import pandas as pd
+
+# Imagine loading a file with 1 million rows
+data = {
+    'Product': ['Phone', 'Laptop', 'Tablet'],
+    'Price': [500, 1200, 300],
+    'Sold': [100, 50, 80]
+}
+
+df = pd.DataFrame(data)
+
+# Find products where price is over 400
+expensive_items = df[df['Price'] > 400]
+print(expensive_items)
